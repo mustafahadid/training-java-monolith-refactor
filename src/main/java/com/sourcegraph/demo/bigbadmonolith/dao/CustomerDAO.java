@@ -7,7 +7,7 @@ import java.sql.*;
 import java.util.ArrayList;
 import java.util.List;
 
-public class CustomerDAO {
+public class CustomerDAO implements ICustomerDAO {
     
     public Customer save(Customer customer) throws SQLException {
         if (customer == null) {
